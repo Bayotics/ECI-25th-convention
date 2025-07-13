@@ -12,14 +12,18 @@ export function Header({ isScrolled }: HeaderProps) {
   return (
     <header
       className={`bg-white shadow-sm py-4 px-8 ${isScrolled ? "fixed z-40 w-full shadow-lg" : ""}`}
-      style={isScrolled ? { top: "40px" } : {}}
+      style={isScrolled ? { top: "33px" } : {}}
     >
       <div className="container mx-auto px-4">
         {/* Logo and Language Row */}
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">ECI</span>
+            <div className="w-36 flex items-center justify-center">
+              <img
+                src="/images/eci-logo.png"
+                alt="Eko Club International 25th Anniversary Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-teal-500 to-purple-600 bg-clip-text text-transparent">
@@ -30,8 +34,8 @@ export function Header({ isScrolled }: HeaderProps) {
           </div>
 
           <div className="flex items-center space-x-2">
-            <Button variant="outline" size="sm" className="text-lg bg-transparent">
-              English
+            <Button variant="outline" className="bg-pink-500 hover:bg-pink-600 text-white text-xl">
+              Register Now
             </Button>
           </div>
         </div>
@@ -47,19 +51,19 @@ export function Header({ isScrolled }: HeaderProps) {
                 About <ChevronDown className="ml-1 h-5 w-5" />
               </button>
             </div>
-            <Link href="/agenda" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
+            <Link href="#" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
               Agenda
             </Link>
-            <Link href="/speakers" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
+            <Link href="#" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
               Speakers
             </Link>
-            <Link href="/venue" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
+            <Link href="#" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
               Venue
             </Link>
-            <Link href="/sponsors" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
+            <Link href="#" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
               Sponsors
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
+            <Link href="#" className="text-gray-700 hover:text-purple-600 font-medium text-xl">
               Contact
             </Link>
           </div>

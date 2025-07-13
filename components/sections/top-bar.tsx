@@ -16,9 +16,9 @@ export function TopBar({ isScrolled }: TopBarProps) {
       <div className="container mx-auto flex justify-center items-center text-sm">
         <div className="flex items-center space-x-4">
           <span>ECI@25: Bridging Generations, Building Communities | Newark, NJ | Sept 18-21, 2025</span>
-          <Button size="sm" className="bg-pink-500 hover:bg-pink-600 text-white">
+          {/* <Button size="sm" className="bg-pink-500 hover:bg-pink-600 text-white">
             Register
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>

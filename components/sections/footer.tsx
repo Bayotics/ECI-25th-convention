@@ -9,8 +9,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-purple-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">ECI</span>
+              <div className="w-12 h-12 flex items-center justify-center">
+                <img
+                  src="/images/eci-logo.png"
+                  alt="Eko Club International Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="text-xl font-bold">Eko Club International</span>
             </div>
